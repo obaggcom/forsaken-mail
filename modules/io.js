@@ -39,7 +39,7 @@ module.exports = function(io) {
   });
   
   mailin.on('validateSender', function(session, address, callback) {
-    if (/163.com/ig.test(address)) { 
+    if (/sharepointonline.com/ig.test(address)) { 
         let _err = new Error('You are blocked(TM你已经被我ban了)'); 
         _err.responseCode = 530; 
         callback(_err);
